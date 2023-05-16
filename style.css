@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+body {
+    background-color: WHITE;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-input {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: lawngreen;
+}
+
+input[type="submit"]:active {
+    background-color: lawngreen;
+}
+
+.submit-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.form-radio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+input[id="radio-black"],
+input[id="radio-white"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
