@@ -1,11 +1,11 @@
 import styles from "./AsteroidAction.module.css";
 
 
-export const AsteroidAction = () =>{
+export const AsteroidAction = ({isDangerous}) =>{
     return (
         <div>
             <div className={styles.actionGrade}>
-                Оценка: опасен
+                {`Оценка:      ${isDangerous ? `опасен` : `не опасен`}`}
             </div>
             <button className={styles.action}>
                 <div className={styles.actionText}>

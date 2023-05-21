@@ -1,20 +1,18 @@
 .actionGrade{
     position: absolute;
     width: 8%;
+    width: 8.5%;
     height: 24%;
     left: 84.5%;
     top: 20%;
-
     font-family: Calibri;
     font-style: normal;
     font-weight: 700;
     font-size: 100%;
     line-height: 150%;
-
     display: flex;
     align-items: flex-end;
     text-align: center;
-
     color: #000000;
 }
 .action{
@@ -36,11 +34,10 @@
     left: 16px;
     right: 16px;
     top: calc(50% - 20px/2);
-    font-family: Calibri, serif;
+    font-family: Calibri;
     font-style: normal;
     font-weight: 400;
     font-size: 100%;
     line-height: 150%;
-
     color: white;
 }

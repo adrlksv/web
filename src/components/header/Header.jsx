@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "./Header.module.css"
-
-export const Header = ()=>{
+export const Header = () => {
     return <div className={styles.container}>
         <div>
             <div className={styles.titleHeader}>ARMAGEDON V</div>

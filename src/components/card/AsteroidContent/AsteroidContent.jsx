@@ -1,21 +1,30 @@
 import styles from "./AsteroidContent.module.css"
-export const AsteroidContent = () =>{
+export const AsteroidContent = (props) =>{
+
+    const {name, date, distance, size,distanceMode} = props;
+
     return (
         <div>
             <div className={styles.contentName}>
-                2021 FQ
+                {name}
             </div>
             <div className={styles.contentWrapper}>
                 <div className={styles.contentDate}>
-                    Дата: 12 сентября 2021 года
+                    {`Дата: ${date}`}
                 </div>
                 <div className={styles.contentDistance}>
-                    Расстояние: 7 235 024 км
+                    {`Расстояние: ${distanceModes(distanceMode, distance)}`}
                 </div>
                 <div className={styles.contentSize}>
-                    Размер: 85 м
+                    {`Размер: ${size} м`}
                 </div>
             </div>
         </div>
     )
+}
+const distanceModes = (distanceMode, distance) => {
+    if (distanceMode)
+        return `${distance} км`
+    else
+        return `${(distance/363104)} Лун`
 }
