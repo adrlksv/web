@@ -1,0 +1,46 @@
+.actionGrade{
+    position: absolute;
+    width: 8%;
+    height: 24%;
+    left: 84.5%;
+    top: 20%;
+
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100%;
+    line-height: 150%;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #000000;
+}
+.action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    position: absolute;
+    width: 16%;
+    height: 24%;
+    left: 80.5%;
+    top: 50%;
+    background: #1860D6;
+    border-radius: 24px;
+}
+.actionText{
+    position: static;
+    height: 20px;
+    left: 16px;
+    right: 16px;
+    top: calc(50% - 20px/2);
+    font-family: Calibri, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 150%;
+
+    color: white;
+}

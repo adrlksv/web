@@ -1,0 +1,12 @@
+.distances{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 417px;
+    height: 20px;
+    right: 113px;
+    top: 87.5px;
+}
