@@ -1,17 +1,18 @@
-import styles from "./AsteroidContent.module.css"
+import styles from './AsteroidContent.module.css'
+
 type AsteroidContentProps = {
-    name: string;
-    date: string;
+    name: string
+    date: string
     distance: {
-        kilometers: number;
+        kilometers: number
         lunar: number
-    };
-    size: number;
-    distanceMode: boolean;
+    }
+    size: number
+    distanceMode: boolean
 }
 
 export const AsteroidContent = (props: AsteroidContentProps) => {
-    const { name, date, distance, size, distanceMode } = props;
+    const { name, date, distance, size, distanceMode } = props
 
     return (
         <div>
@@ -26,5 +27,5 @@ export const AsteroidContent = (props: AsteroidContentProps) => {
                 <div className={styles.contentSize}>{`Размер: ${size} м`}</div>
             </div>
         </div>
-    );
-};
+    )
+}
