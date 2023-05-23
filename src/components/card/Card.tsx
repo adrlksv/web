@@ -1,22 +1,22 @@
-import { AsteroidContent } from "./AsteroidContent/AsteroidContent";
-import { AsteroidAction } from "./AsteroidAction/AsteroidAction";
-import { AsteroidImage } from "./AsteroidImage/AsteroidImage";
-import styles from "./Card.module.css";
+import { AsteroidContent } from './AsteroidContent/AsteroidContent'
+import { AsteroidAction } from './AsteroidAction/AsteroidAction'
+import { AsteroidImage } from './AsteroidImage/AsteroidImage'
+import styles from './Card.module.css'
 
 type AsteroidCardProps = {
-    name: string;
-    date: string;
+    name: string
+    date: string
     distance: {
-        kilometers: number;
-        lunar: number;
-    };
-    size: number;
-    isDangerous: boolean;
-    distanceMode: boolean;
-};
+        kilometers: number
+        lunar: number
+    }
+    size: number
+    isDangerous: boolean
+    distanceMode: boolean
+}
 
 export const AsteroidCard = (props: AsteroidCardProps) => {
-    const { name, date, distance, size, isDangerous, distanceMode } = props;
+    const { name, date, distance, size, isDangerous, distanceMode } = props
 
     return (
         <div className={styles.card}>
@@ -32,5 +32,5 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
                 <AsteroidAction isDangerous={isDangerous} />
             </div>
         </div>
-    );
-};
+    )
+}
