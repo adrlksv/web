@@ -1,4 +1,6 @@
 import styles from './AsteroidContent.module.css'
+import { useContext } from 'react'
+import { AsteroidsContext } from '../../asteroids-context/AsteroidsContext'
 
 type AsteroidContentProps = {
     name: string
@@ -13,6 +15,7 @@ type AsteroidContentProps = {
 
 export const AsteroidContent = (props: AsteroidContentProps) => {
     const { name, date, distance, size, distanceMode } = props
+    const { distanceMode } = useContext(AsteroidsContext)
 
     return (
         <div>
