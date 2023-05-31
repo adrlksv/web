@@ -4,6 +4,7 @@ import { Header } from '../components/header/Header'
 import { Link } from 'react-router-dom'
 import {useContext, useEffect, useState} from 'react'
 import {AsteroidsContext} from "../components/asteroids-context/AsteroidsContext";
+import {getUserKey} from "../utils/getUserKey";
 
 export const Asteroids = () => {
 
@@ -11,7 +12,7 @@ export const Asteroids = () => {
     useEffect(() => {
         try {
             fetch(
-                'https://api.nasa.gov/neo/rest/v1/feed?api_key=IBHHw7GM4HWxZRxUQpSQZIylGjEwuUbIWy6IeXwX'
+                `https://api.nasa.gov/neo/rest/v1/feed?api_key=${getUserKey()}`
             )
                 .then((res) => res.json())
                 .then((response) => {
