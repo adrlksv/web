@@ -1,6 +1,7 @@
 import styles from './AsteroidImage.module.css'
+import {memo} from "react";
 
-export const AsteroidImage = () => {
+export const AsteroidImage = memo(() => {
     return (
         <svg
             className={styles.asteroidImage}
@@ -60,4 +61,6 @@ export const AsteroidImage = () => {
             />
         </svg>
     )
-}
+})
+
+AsteroidImage.displayName = "AsteroidImage"
