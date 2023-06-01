@@ -5,6 +5,7 @@ import styles from './Card.module.css'
 import React from "react";
 import {useContext} from "react"
 import {AsteroidsContext} from "../asteroids-context/AsteroidsContext";
+import {CardContainer} from "./AsteroidContent/CardContentContainer";
 
 
 type AsteroidCardProps = {
@@ -28,9 +29,9 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
 
     return (
         <div className={styles.card}>
-            <div className={isDangerous ? styles.cardRed : styles.normCard}>
+            <div className={isDangerous ? styles.cardRed : styles.regularCard}>
                 <AsteroidImage />
-                <CardContentContainer
+                <CardContainer
                     name={name}
                     date={date}
                     distance={distance}
