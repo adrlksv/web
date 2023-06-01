@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Asteroids } from './pages/Asteroids'
 import { Destroyment } from './pages/Destroyment'
 import { Asteroid } from './pages/Asteroid'
+import {AsteroidsContextProvider} from "./components/asteroids-context/AsteroidsContext";
 
 const router = createBrowserRouter([
     {
@@ -26,8 +27,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
-        <AsteroidsContext.Provider value={"AsteroidsContext value"}>
+        <AsteroidsContextProvider>
             <RouterProvider router={router} />
-        </AsteroidsContext.Provider>
+        </AsteroidsContextProvider>
     </React.StrictMode>
 );

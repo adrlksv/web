@@ -14,5 +14,5 @@ export const AsteroidAction = (props: {isDangerous: boolean, onClick: (asteroid:
                 <div className={styles.actionText}>На уничтожение</div>
             </button>
         </div>
-    )
-}
+    );
+};
