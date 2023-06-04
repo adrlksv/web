@@ -8,6 +8,8 @@ import {getUserKey} from "../utils/getUserKey";
 
 export const Asteroids = () => {
 
+    const [asteroids, setAsteroids] = useState([]);
+    const [distanceMode] = useState(false);
 
     useEffect(() => {
         try {
