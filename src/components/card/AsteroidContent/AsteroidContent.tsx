@@ -14,7 +14,7 @@ type AsteroidContentProps = {
 }
 
 export const AsteroidContent = (props: AsteroidContentProps) => {
-    const { name, date, distance, size, distanceMode } = props
+    const { name, date, distance, size } = props
     const { distanceMode } = useContext(AsteroidsContext)
 
     return (
